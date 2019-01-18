@@ -1,0 +1,263 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="RUI_ses" target="8" version="2">
+  <project Name="RUI_ses">
+    <configuration
+      Name="Common"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_linker_heap_size="1024"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="1024"
+      arm_linker_variant="SEGGER"
+      arm_simulator_memory_simulation_parameter="RX 00000000,00080000,FFFFFFFF;RWX 20000000,00010000,CDCDCDCD"
+      arm_target_device_name="nRF52832_xxAA"
+      arm_target_interface_type="SWD"
+      c_user_include_directories="../external/freertos/source/include;../external/freertos/config;../external/freertos/source;../components ;../components/libraries/experimental_memobj ;../components/libraries/experimental_section_vars ;../components/softdevice/s132/headers ;../components/softdevice/s132/headers/nrf52 ;../components/libraries/strerror ;../components/libraries/fstorage ;../components/libraries/experimental_memobj ;../components/softdevice/common ;../components/libraries/util ;../components/ble/ble_link_ctx_manager ;../components/libraries/atomic ;../components/libraries/atomic_flags ;../components/ble/nrf_ble_gatt ;../components/libraries/balloc ;../components/boards ;../components/ble/peer_manager ;../integration/nrfx/legacy ;../components/libraries/experimental_log ;../components/softdevice/common ;../components/ble/common ;../components/ble/ble_services/ble_nus ;../components/ble/ble_services/ble_nus ;../components/ble/ble_link_ctx_manager ;../components/ble/ble_advertising ;../components/libraries/atomic_flags ;../components/libraries/timer ;../components/libraries/fds ;../components/libraries/fifo ;../components/libraries/atomic ;../components/libraries/atomic_fifo ;../components/libraries/uart ;../components/libraries/fstorage ;../components/libraries/crc32 ;../components/libraries/sha256 ;../components/libraries/crypto ;../components/libraries/crypto/backend/cc310 ;../components/libraries/crypto/backend/cc310_bl ;../components/libraries/crypto/backend/nrf_sw ;../components/libraries/crypto/backend/mbedtls ;../components/libraries/crypto/backend/oberon ;../components/libraries/crypto/backend/micro_ecc ;../components/libraries/bootloader/dfu ;../components/ble/nrf_ble_gatt ;../components/libraries/uart/ ;../modules/nrfx/mdk ;../RUI/build/RTE ;../modules/nrfx/hal ;../modules/nrfx/drivers/src/prs ;../components/libraries/balloc ;../components/libraries/experimental_log ;../components/libraries/experimental_log/src ;../components/libraries/delay ;../integration/nrfx ;../components/libraries/bsp ;../components/drivers_nrf/nrf_soc_nosd ;../external/segger_rtt ;../RUI/Source ;../RUI/Source/include ;../RUI/Source/external/micro-ecc ;../components/libraries/strerror ;../components/boards ;../components/toolchain/cmsis/include ;../modules/nrfx ;../components/libraries/util ;../external/freertos/portable/GCC/nrf52/ ;../external/freertos/portable/CMSIS/nrf52 ;../external/freertos/source/include ;../external/fprintf ;../external/segger_rtt ;../integration/nrfx/legacy ;../modules/nrfx/drivers/include ;../components/libraries/util ;../components/ble/ble_advertising ;../components/libraries/fds ;../components/libraries/button ;../components/libraries/bsp ;../modules/nrfx/drivers/include ;../modules/nrfx/hal/ ;../config;../components;../components/ble/ble_advertising;../components/ble/ble_dtm;../components/ble/ble_racp;../components/ble/ble_services/ble_ancs_c;../components/ble/ble_services/ble_ans_c;../components/ble/ble_services/ble_bas;../components/ble/ble_services/ble_bas_c;../components/ble/ble_services/ble_cscs;../components/ble/ble_services/ble_cts_c;../components/ble/ble_services/ble_dfu;../components/ble/ble_services/ble_dis;../components/ble/ble_services/ble_gls;../components/ble/ble_services/ble_hids;../components/ble/ble_services/ble_hrs;../components/ble/ble_services/ble_hrs_c;../components/ble/ble_services/ble_hts;../components/ble/ble_services/ble_ias;../components/ble/ble_services/ble_ias_c;../components/ble/ble_services/ble_lbs;../components/ble/ble_services/ble_lbs_c;../components/ble/ble_services/ble_lls;../components/ble/ble_services/ble_nus;../components/ble/ble_services/ble_nus_c;../components/ble/ble_services/ble_rscs;../components/ble/ble_services/ble_rscs_c;../components/ble/ble_services/ble_tps;../components/ble/common;../components/ble/nrf_ble_gatt;../components/ble/nrf_ble_qwr;../components/ble/peer_manager;../components/boards;../components/drivers_nrf/usbd;../components/libraries/atomic;../components/libraries/atomic_fifo;../components/libraries/atomic_flags;../components/libraries/balloc;../components/libraries/bootloader/ble_dfu;../components/libraries/bsp;../components/libraries/button;../components/libraries/cli;../components/libraries/crc16;../components/libraries/crc32;../components/libraries/crypto;../components/libraries/csense;../components/libraries/csense_drv;../components/libraries/delay;../components/libraries/ecc;../components/libraries/experimental_section_vars;../components/libraries/experimental_task_manager;../components/libraries/fds;../components/libraries/fstorage;../components/libraries/gfx;../components/libraries/gpiote;../components/libraries/hardfault;../components/libraries/hardfault/nrf52;../components/libraries/hci;../components/libraries/led_softblink;../components/libraries/log;../components/libraries/log/src;../components/libraries/low_power_pwm;../components/libraries/mem_manager;../components/libraries/memobj;../components/libraries/mpu;../components/libraries/mutex;../components/libraries/pwm;../components/libraries/pwr_mgmt;../components/libraries/queue;../components/libraries/ringbuf;../components/libraries/scheduler;../components/libraries/sdcard;../components/libraries/sensorsim;../components/libraries/slip;../components/libraries/sortlist;../components/libraries/spi_mngr;../components/libraries/stack_guard;../components/libraries/strerror;../components/libraries/svc;../components/libraries/timer;../components/libraries/twi_mngr;../components/libraries/twi_sensor;../components/libraries/usbd;../components/libraries/usbd/class/audio;../components/libraries/usbd/class/cdc;../components/libraries/usbd/class/cdc/acm;../components/libraries/usbd/class/hid;../components/libraries/usbd/class/hid/generic;../components/libraries/usbd/class/hid/kbd;../components/libraries/usbd/class/hid/mouse;../components/libraries/usbd/class/msc;../components/libraries/util;../components/nfc/ndef/conn_hand_parser;../components/nfc/ndef/conn_hand_parser/ac_rec_parser;../components/nfc/ndef/conn_hand_parser/ble_oob_advdata_parser;../components/nfc/ndef/conn_hand_parser/le_oob_rec_parser;../components/nfc/ndef/connection_handover/ac_rec;../components/nfc/ndef/connection_handover/ble_oob_advdata;../components/nfc/ndef/connection_handover/ble_pair_lib;../components/nfc/ndef/connection_handover/ble_pair_msg;../components/nfc/ndef/connection_handover/common;../components/nfc/ndef/connection_handover/ep_oob_rec;../components/nfc/ndef/connection_handover/hs_rec;../components/nfc/ndef/connection_handover/le_oob_rec;../components/nfc/ndef/generic/message;../components/nfc/ndef/generic/record;../components/nfc/ndef/launchapp;../components/nfc/ndef/parser/message;../components/nfc/ndef/parser/record;../components/nfc/ndef/text;../components/nfc/ndef/uri;../components/nfc/t2t_lib;../components/nfc/t2t_lib/hal_t2t;../components/nfc/t2t_parser;../components/nfc/t4t_lib;../components/nfc/t4t_lib/hal_t4t;../components/nfc/t4t_parser/apdu;../components/nfc/t4t_parser/cc_file;../components/nfc/t4t_parser/hl_detection_procedure;../components/nfc/t4t_parser/tlv;../components/softdevice/common;../components/softdevice/s132/headers;../components/softdevice/s132/headers/nrf52;../components/toolchain/cmsis/include;../external/fprintf;../external/freertos/config;../external/freertos/portable/CMSIS/nrf52;../external/freertos/portable/GCC/nrf52;../external/freertos/source/include;../external/segger_rtt;../external/utf_converter;../integration/nrfx;../integration/nrfx/legacy;../modules/nrfx;../modules/nrfx/drivers/include;../modules/nrfx/hal;../modules/nrfx/mdk;."
+      debug_target_connection="J-Link"
+      link_linker_script_file="$(ProjectDir)/SEGGER_Flash.icf"
+      linker_output_format="hex"
+      linker_section_placements_segments="FLASH RX 0x00000000 0x00080000;RAM RWX 0x20000000 0x00010000"
+      project_directory=""
+      project_type="Executable" />
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc" />
+      <file file_name="main.c" />
+      <file file_name="sdk_config.h" />
+    </folder>
+    <folder Name="RTT Files">
+      <file file_name="SEGGER_RTT.c" />
+      <file file_name="SEGGER_RTT.h" />
+      <file file_name="SEGGER_RTT_Conf.h" />
+      <file file_name="SEGGER_RTT_Syscalls_SES.c" />
+    </folder>
+    <folder Name="System Files">
+      <file file_name="Cortex_M_Startup.s" />
+      <file file_name="HardFaultHandler.S" />
+      <file file_name="SEGGER_HardFaultHandler.c" />
+      <file file_name="SEGGER_THUMB_Startup.s" />
+    </folder>
+    <folder Name="driver">
+      <file file_name="driver/bg96.c" />
+      <file file_name="driver/bme280.c" />
+      <file file_name="driver/lis2mdl.c" />
+      <file file_name="driver/lis3dh.c" />
+      <file file_name="driver/opt3001.c" />
+    </folder>
+    <folder Name="nRF52832_xxAA">
+      <file file_name="../RUI/build/RTE/Device/nRF52832_xxAA/system_nrf52.c" />
+    </folder>
+    <folder Name="mdk">
+      <file file_name="../modules/nrfx/mdk/gcc_startup_nrf52.S" />
+    </folder>
+    <folder Name="sensor">
+      <file file_name="service/sensor/sensor.c" />
+    </folder>
+    <folder Name="sdk">
+      <folder Name="external">
+        <folder Name="freertos">
+          <folder Name="source">
+            <file file_name="../external/freertos/source/croutine.c" />
+            <file file_name="../external/freertos/source/event_groups.c" />
+            <file file_name="../external/freertos/source/list.c" />
+            <file file_name="../external/freertos/source/queue.c" />
+            <file file_name="../external/freertos/source/stream_buffer.c" />
+            <file file_name="../external/freertos/source/tasks.c" />
+            <file file_name="../external/freertos/source/timers.c" />
+            <folder Name="portable">
+              <folder Name="MemMang">
+                <file file_name="../external/freertos/source/portable/MemMang/heap_1.c" />
+              </folder>
+            </folder>
+          </folder>
+          <folder Name="portable">
+            <folder Name="CMSIS">
+              <folder Name="nrf52">
+                <file file_name="../external/freertos/portable/CMSIS/nrf52/port_cmsis_systick.c" />
+                <file file_name="../external/freertos/portable/CMSIS/nrf52/port_cmsis.c" />
+              </folder>
+            </folder>
+          </folder>
+        </folder>
+        <folder Name="fprintf">
+          <file file_name="../external/fprintf/nrf_fprintf_format.c" />
+          <file file_name="../external/fprintf/nrf_fprintf.c" />
+        </folder>
+        <folder Name="segger_rtt">
+          <file file_name="../external/segger_rtt/SEGGER_RTT_printf.c" />
+          <file file_name="../external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c" />
+          <file file_name="../external/segger_rtt/SEGGER_RTT.c" />
+        </folder>
+      </folder>
+      <folder Name="components">
+        <folder Name="ble">
+          <folder Name="ble_link_ctx_manager">
+            <file file_name="../components/ble/ble_link_ctx_manager/ble_link_ctx_manager.c" />
+          </folder>
+          <folder Name="peer_manager">
+            <file file_name="../components/ble/peer_manager/gatt_cache_manager.c" />
+            <file file_name="../components/ble/peer_manager/gatts_cache_manager.c" />
+            <file file_name="../components/ble/peer_manager/id_manager.c" />
+            <file file_name="../components/ble/peer_manager/peer_data_storage.c" />
+            <file file_name="../components/ble/peer_manager/peer_database.c" />
+            <file file_name="../components/ble/peer_manager/peer_id.c" />
+            <file file_name="../components/ble/peer_manager/peer_manager.c" />
+            <file file_name="../components/ble/peer_manager/pm_buffer.c" />
+            <file file_name="../components/ble/peer_manager/pm_mutex.c" />
+            <file file_name="../components/ble/peer_manager/security_dispatcher.c" />
+            <file file_name="../components/ble/peer_manager/security_manager.c" />
+          </folder>
+          <folder Name="common">
+            <file file_name="../components/ble/common/ble_srv_common.c" />
+            <file file_name="../components/ble/common/ble_advdata.c" />
+            <file file_name="../components/ble/common/ble_conn_params.c" />
+            <file file_name="../components/ble/common/ble_conn_state.c" />
+          </folder>
+          <folder Name="nrf_ble_gatt">
+            <file file_name="../components/ble/nrf_ble_gatt/nrf_ble_gatt.c" />
+          </folder>
+          <folder Name="ble_services">
+            <folder Name="ble_nus">
+              <file file_name="../components/ble/ble_services/ble_nus_c/ble_nus_c.c" />
+            </folder>
+          </folder>
+          <folder Name="ble_advertising">
+            <file file_name="../components/ble/ble_advertising/ble_advertising.c" />
+          </folder>
+        </folder>
+        <folder Name="libraries">
+          <folder Name="experimental_log">
+            <folder Name="src">
+              <file file_name="../components/libraries/experimental_log/src/nrf_log_backend_rtt.c" />
+              <file file_name="../components/libraries/experimental_log/src/nrf_log_backend_serial.c" />
+              <file file_name="../components/libraries/experimental_log/src/nrf_log_backend_uart.c" />
+              <file file_name="../components/libraries/experimental_log/src/nrf_log_frontend.c" />
+              <file file_name="../components/libraries/experimental_log/src/nrf_log_str_formatter.c" />
+              <file file_name="../components/libraries/experimental_log/src/nrf_log_default_backends.c" />
+            </folder>
+          </folder>
+          <folder Name="experimental_section_vars">
+            <file file_name="../components/libraries/experimental_section_vars/nrf_section_iter.c" />
+          </folder>
+          <folder Name="strerror">
+            <file file_name="../components/libraries/strerror/nrf_strerror.c" />
+          </folder>
+          <folder Name="fstorage">
+            <file file_name="../components/libraries/fstorage/nrf_fstorage_sd.c" />
+            <file file_name="../components/libraries/fstorage/nrf_fstorage.c" />
+          </folder>
+          <folder Name="util">
+            <file file_name="../components/libraries/util/app_error_weak.c" />
+            <file file_name="../components/libraries/util/app_error.c" />
+            <file file_name="../components/libraries/util/app_util_platform.c" />
+            <file file_name="../components/libraries/util/app_error_handler_gcc.c" />
+            <file file_name="../components/libraries/util/nrf_assert.c" />
+          </folder>
+          <folder Name="fifo">
+            <file file_name="../components/libraries/fifo/app_fifo.c" />
+          </folder>
+          <folder Name="balloc">
+            <file file_name="../components/libraries/balloc/nrf_balloc.c" />
+          </folder>
+          <folder Name="atomic">
+            <file file_name="../components/libraries/atomic/nrf_atomic.c" />
+          </folder>
+          <folder Name="atomic_flags">
+            <file file_name="../components/libraries/atomic_flags/nrf_atflags.c" />
+          </folder>
+          <folder Name="experimental_memobj">
+            <file file_name="../components/libraries/experimental_memobj/nrf_memobj.c" />
+          </folder>
+          <folder Name="atomic_fifo">
+            <file file_name="../components/libraries/atomic_fifo/nrf_atfifo.c" />
+          </folder>
+          <folder Name="bsp">
+            <file file_name="../components/libraries/bsp/bsp.c" />
+            <file file_name="../components/libraries/bsp/bsp_btn_ble.c" />
+          </folder>
+          <folder Name="timer">
+            <file file_name="../components/libraries/timer/app_timer_freertos.c" />
+          </folder>
+          <folder Name="fds">
+            <file file_name="../components/libraries/fds/fds.c" />
+          </folder>
+          <folder Name="uart">
+            <file file_name="../components/libraries/uart/app_uart_fifo.c" />
+          </folder>
+        </folder>
+        <folder Name="boards">
+          <file file_name="../components/boards/boards.c" />
+        </folder>
+        <folder Name="softdevice">
+          <folder Name="common">
+            <file file_name="../components/softdevice/common/nrf_sdh_ble.c" />
+            <file file_name="../components/softdevice/common/nrf_sdh_freertos.c" />
+            <file file_name="../components/softdevice/common/nrf_sdh_soc.c" />
+            <file file_name="../components/softdevice/common/nrf_sdh.c" />
+          </folder>
+        </folder>
+      </folder>
+      <folder Name="modules">
+        <folder Name="nrfx">
+          <folder Name="drivers">
+            <folder Name="src">
+              <file file_name="../modules/nrfx/drivers/src/nrfx_clock.c" />
+              <file file_name="../modules/nrfx/drivers/src/nrfx_gpiote.c" />
+              <file file_name="../modules/nrfx/drivers/src/nrfx_spim.c" />
+              <file file_name="../modules/nrfx/drivers/src/nrfx_twim.c" />
+              <file file_name="../modules/nrfx/drivers/src/nrfx_uart.c" />
+              <file file_name="../modules/nrfx/drivers/src/nrfx_uarte.c" />
+              <folder Name="prs">
+                <file file_name="../modules/nrfx/drivers/src/prs/nrfx_prs.c" />
+              </folder>
+            </folder>
+          </folder>
+          <folder Name="hal">
+            <file file_name="../modules/nrfx/hal/nrf_nvmc.c" />
+          </folder>
+        </folder>
+      </folder>
+      <folder Name="integration">
+        <folder Name="nrfx">
+          <folder Name="legacy">
+            <file file_name="../integration/nrfx/legacy/nrf_drv_clock.c" />
+            <file file_name="../integration/nrfx/legacy/nrf_drv_power.c" />
+            <file file_name="../integration/nrfx/legacy/nrf_drv_spi.c" />
+            <file file_name="../integration/nrfx/legacy/nrf_drv_swi.c" />
+            <file file_name="../integration/nrfx/legacy/nrf_drv_twi.c" />
+            <file file_name="../integration/nrfx/legacy/nrf_drv_uart.c" />
+          </folder>
+        </folder>
+      </folder>
+    </folder>
+    <folder Name="app">
+      <file file_name="app/test_task.c" />
+    </folder>
+    <folder Name="board">
+      <file file_name="board/board_basic.c" />
+      <file file_name="board/itracker_basic.c" />
+    </folder>
+    <folder Name="external">
+      <file file_name="external/utilities.c" />
+    </folder>
+    <folder Name="hal">
+      <file file_name="hal/hal_gpio.c" />
+      <file file_name="hal/hal_i2c.c" />
+      <file file_name="hal/hal_spi.c" />
+      <file file_name="hal/hal_uart.c" />
+    </folder>
+  </project>
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG"
+    gcc_debugging_level="Level 3"
+    gcc_optimization_level="None" />
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_debugging_level="None"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="Level 1" />
+</solution>
